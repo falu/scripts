@@ -15,6 +15,6 @@ echo $user > $loginfile
 echo $domain >> $loginfile
 echo $pass >> $loginfile
 
-gio mount $share < $loginfile
+gvfs-mount $share < $loginfile
 
 rm $loginfile
